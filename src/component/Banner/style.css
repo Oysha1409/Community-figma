@@ -1,0 +1,28 @@
+.banner-section {
+    padding-block: 72px;
+    background: #FBFBFB;
+}
+
+
+.banner-info_title {
+    max-width: 354px;
+    width: 100%;
+    color: #000;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-info_title::after {
+    content: url("../../assets/coffe-img.png");
+    width: 70px;
+    height: 67px;
+}
+
+.banner-info_text {
+    color: #4A5568;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+}

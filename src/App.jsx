@@ -1,40 +1,32 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+
+import Home from './pages/Home';
+import Articles from './pages/Articles';
+import './App.css';
+import Loader from './component/Loader';
 
 function App() {
-  const [data, setData] = useState([]);
-  const [dataName, setDataName] = useState("");
 
-  async function fetchData() {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/${dataName}`)
-      .then(response => response.json())
-      .then(json => setData(json));
-  }
 
-  useEffect(()=> {
-    fetchData()
-  }, [dataName]);
+    const router = createBrowserRouter([
+      {
+        path: "/",
+        element: <Home/>,
+        loader: Loader,
+      },
+      {
+        path: "/articles",
+        element: <Articles/>,
+        loader: Loader,
+      },
+    ]);
 
-  return (
-    <>
-    <div className='btn-group'>
-    <button onClick={() => setDataName ("posts")}>Posts</button>
-    <button onClick={() => setDataName ("comments")}>Comments</button>
-    <button onClick={() => setDataName ("todos")}>Todos</button>
-    <button onClick={() => setDataName ("users")}>Users</button>
-    </div>
+return <RouterProvider router={router}/>;
 
-    <div>
-    {data.map((el) =>(
-      <p>{el.title}</p>
-    ))}
-    </div>
-  
-    </>
-   
-  );
+
+ 
 }
 
 export default App;

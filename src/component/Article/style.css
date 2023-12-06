@@ -1,0 +1,37 @@
+.article {
+    margin-block: 40px;
+}
+
+.article-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-radius: 5px;
+    border: 1px solid #E2E2E2;
+    background: #FFF;
+    box-shadow: 0px 5px 4px 0px rgba(221, 221, 221, 0.25);
+}
+
+.article-info {
+   
+    padding: 42px 52px;
+}
+
+.article-title {
+    color: #2D3748;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.article-img {
+    max-width: 433px;
+    width: 100%;
+    
+}
+
+.article-img img {
+    display: block;
+}

@@ -1,0 +1,49 @@
+.article-item {
+    margin-top: 43px;
+}
+
+.item-container {
+    background: #F7FAFC;
+
+}
+
+.article-item_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-info {
+    max-width: 400px;
+    width: 100%;
+    padding-left: 63px;
+}
+
+.item-info_title {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    margin-block: 24px 30px;
+}
+
+
+
+.article-date {
+    margin-top: 31px;
+}
+
+.item-date {
+    margin-bottom: 118px;
+}
+
+.item-img {
+    max-width: 450px;
+    width: 100%;
+}
+
+.item-img img {
+    width: 100%;
+    display: block;
+
+}
